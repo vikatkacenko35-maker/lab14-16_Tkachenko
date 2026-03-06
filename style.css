@@ -1,3 +1,4 @@
+
 body {
   background-image: url('img/products/vertical-high-angle-shot-forest-mountains-with-white-sky.jpg');
   background-repeat: no-repeat; 
@@ -5,6 +6,11 @@ body {
   background-attachment: fixed; 
   background-size: cover; 
   background-color: #333; 
+  
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 0.23)!important;
 }
 .fst-italic {
     font-style: italic !important;
@@ -37,4 +43,40 @@ h1 {
 .bg-body-secondary {
     --bs-bg-opacity: 1;
     background-color:#ffffff5f  !important;
+}
+.card{
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 25px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+img {
+    border-radius: 25px;
+    height: 200px;
+    width: 425px;
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: #15673e;
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #15673e;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
 }
