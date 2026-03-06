@@ -11,26 +11,51 @@
 </head>
 
 <body>
-    <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
-            <li class="nav-item b"><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
-            <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
-        </ul>
-    </header>
+    <main>
 
-    <div class="container-fluid bg-light py-5" id="home">
-        <div class="container text-center">
-            <h1 class="display-4">Добро пожаловать!</h1>
-            <p class="lead">Наше Тур-Агенство найдет вам туры под любой бюджет!</p>
-            <button class="btn btn-success btn-lg">Узнать больше</button>
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item b"><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+            </ul>
+        </header>
+
+        <div class="container-fluid bg-light py-5" id="home">
+            <div class="container text-center">
+                <h1 class="display-4">Добро пожаловать!</h1>
+                <p class="lead">Наше Тур-Агенство найдет вам туры под любой бюджет!</p>
+                <button class="btn btn-success btn-lg">Горящие туры</button>
+            </div>
         </div>
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <div class="row g-3" id="gallery">
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            <!-- Карточка 1 - Веб-дизайн -->
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://placeholder.apptor.studio/400/300/website.png" class="card-img-top"
+                        alt="Веб-проект">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Корпоративный сайт</h6>
+                        <small class="text-muted">Веб-дизайн</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+            <div class="col-lg-6 px-0">
+                <h1 class="display-4 fst-italic">«The world is a book, and those who do not travel read only one page»
+                </h1>
+                <p class="lead my-3">сказал Святой Августин.</p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
