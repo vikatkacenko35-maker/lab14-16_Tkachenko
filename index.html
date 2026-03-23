@@ -8,6 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили только для футера, почему-то когда в css пишу, не работает*/
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer h5 {
+            color: white;
+            margin-bottom: 1.2rem;
+        }
+        
+        footer p, 
+        footer li {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #28a745;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,84 +59,143 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
-        <div class="row g-3" id="gallery">
-            <div class="container my-5" id="services">
-                <h2 class="text-center mb-5">Топ предложения</h2>
-                <div class="row g-4">
-                    <!-- Карточка 1 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <div class="card">
-                                    <img src="https://pic.tu-tu.ru/content4/shutterstock_317690945.jpg" alt="">
-                                </div>
-                                </br>
-                                <h5 class="card-title">Три в одном: озеро Рица, Новый Афон и Гагры</h5>
-                                <p class="card-text">
-                                    Вы вдохновитесь чудесными пейзажами, увидите святыни древнего христианского
-                                    монастыря и узнаете о жизни и традициях абхазцев. Я расскажу, где они любят
-                                    проводить время, как относятся к старшим, что готовят, когда заводят семьи и как
-                                    справляют свадьбы.
-                                </p>
-                                <a href="#" class="btn btn-success">Подробнее</a>
-                            </div>
+        <div class="container my-5" id="gallery">
+            <h2 class="text-center mb-5">Топ предложения</h2>
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://pic.tu-tu.ru/content4/shutterstock_317690945.jpg" class="card-img-top" alt="Озеро Рица, Абхазия">
+                        <div class="card-body">
+                            <h5 class="card-title">Три в одном: озеро Рица, Новый Афон и Гагры</h5>
+                            <p class="card-text">
+                                Вы вдохновитесь чудесными пейзажами, увидите святыни древнего христианского
+                                монастыря и узнаете о жизни и традициях абхазцев. Я расскажу, где они любят
+                                проводить время, как относятся к старшим, что готовят, когда заводят семьи и как
+                                справляют свадьбы.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">Подробнее</a>
                         </div>
                     </div>
-                    <!-- Карточка 2 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <div class="card">
-                                    <img src="https://email-images.mindbox.ru/Leveltravel/2192/0f66ef30-41e3-42ed-853c-0fb451fea482.png"
-                                        alt="">
-                                </div>
-                                </br>
-                                <h5 class="card-title">Пхукет – жемчужина Таиланда</h5>
-                                <p class="card-text">
-                                    Пхукет – остров, где тропические джунгли встречаются с бирюзовыми водами
-                                    Андаманского моря. Здесь вас ждет идеальный пляжный отдых, завораживающие пейзажи,
-                                    яркая культура и незабываемые приключения.
-                                    Еще четка текста про супер солнечный континент. четка четка четкое место.
-                                </p>
-                                <a href="#" class="btn btn-success">Подробнее</a>
-                            </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://blog.ostrovok.ru/wp-content/uploads/2025/07/%D0%B12%D1%812-1-1280x559.jpg" class="card-img-top" alt="Москва">
+                        <div class="card-body">
+                            <h5 class="card-title">Москва – Столица России</h5>
+                            <p class="card-text">
+                                столица России, город федерального значения, административный центр Центрального
+                                федерального округа и центр Московской области, в состав которой не входит. 
+                                Мегаполис; крупнейший по численности населения город России и её субъект — 13 274 285
+                                человек.
+                                Тур по главным достопримечательностям столицы!
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://email-images.mindbox.ru/Leveltravel/2192/0f66ef30-41e3-42ed-853c-0fb451fea482.png" class="card-img-top" alt="Пхукет">
+                        <div class="card-body">
+                            <h5 class="card-title">Пхукет – жемчужина Таиланда</h5>
+                            <p class="card-text">
+                                Пхукет – остров, где тропические джунгли встречаются с бирюзовыми водами
+                                Андаманского моря. Здесь вас ждет идеальный пляжный отдых, завораживающие пейзажи,
+                                яркая культура и незабываемые приключения.
+                                Еще четка текста про супер солнечный континент. четка четка четкое место.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">Подробнее</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-                <h5 class="display-12 fst-italic">До начала Дубайской лихорадки осталось: </h5>
-                <br>
-                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-                </div>
-            </div>
-            <!-- <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-                <div class="col-lg-6 px-0">
-                    <h1 class="display-4 fst-italic">«The world is a book, and those who do not travel read only one
-                        page»
-                    </h1>
-                    <p class="lead my-3">сказал Святой Августин.</p>
-                </div>
-            </div> -->
-    </main>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p> <a href="/"
-                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-                aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> </a>
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-        </footer>
-    </div>
-</body>
+        </div>
+        <br></br>
+        <!-- Секция с карточками -->
+<div class="container my-5" id="services">
+<h2 class="text-center mb-5">Наши преимущества</h2>
+<div class="row g-4">
+<!-- Карточка 1 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+<h5 class="card-title">Индивидуальный подбор тура</h5>
+<p class="card-text">
+Мы учитываем все ваши пожелания: 
+бюджет, даты, состав путешественников, любимые активности и даже скрытые предпочтения.
+</p>
+<a href="catalog.html" class="btn btn-success">Подробнее</a>
+</div>
+</div>
+</div>
+<!-- Карточка 2 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+<h5 class="card-title"> Лучшие цены на рынке</h5>
+<p class="card-text">
+Работаем напрямую с проверенными туроператорами и отелями, поэтому предлагаем выгодные цены. 
+</p>
+<a href="catalog.html" class="btn btn-success">Подробнее</a>
+</div>
+</div>
+</div>
+<!-- Карточка 3 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+<h5 class="card-title">Поддержка 24/7</h5>
+<p class="card-text">
+Мы на связи с вами с момента бронирования до возвращения домой. 
+Поможем в любой ситуации на протяжении всей поездки!
+</p>
+<a href="catalog.html" class="btn btn-success">Подробнее</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br></br>
 
+    </main>
+    
+    <footer>
+        <div class="container" id = "contact">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>О компании</h5>
+                    <p>
+                        Мы создаем современные веб-решения для вашего бизнеса с
+                        использованием передовых технологий.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#gallery">Топ предложения</a></li>
+                        <li><a href="#services">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: vikatkacenko35@gmail.com</li>
+                        <li>Телефон: +7 (992) 151-73-80</li>
+                        <li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2026 TourAgent. Все права защищены.</p>
+                <p class="mb-0 text-muted">Создано с помощью Bootstrap 5</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

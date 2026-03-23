@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-Ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,237 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили только для футера, почему-то когда в css пишу, не работает*/
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer h5 {
+            color: white;
+            margin-bottom: 1.2rem;
+        }
+        
+        footer p, 
+        footer li {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #28a745;
+        }
+        
+        footer hr {
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 1.5rem 0;
+        }
+        
+        footer .text-muted {
+            color: rgba(255, 255, 255, 0.5) !important;
+        }
+    </style>
 </head>
+
 <body>
+    <main>
+
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item b"><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+            </ul>
+        </header>
+
+        <div class="container-fluid bg-light py-5" id="home">
+            <div class="container text-center">
+                <h1 class="display-4">Каталог туров</h1>
+                <p class="lead">Наше Тур-Агенство найдет вам туры под любой бюджет!</p>
+                <button class="btn btn-success btn-lg"><a href="#gallery">Просмотр туров</a></button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <div class="container my-5" id="gallery">
+            <h2 class="text-center mb-5">Актуальные предложения</h2>
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://pic.tu-tu.ru/content4/shutterstock_317690945.jpg" class="card-img-top" alt="Озеро Рица, Абхазия">
+                        <div class="card-body">
+                            <h5 class="card-title">Три в одном: озеро Рица, Новый Афон и Гагры</h5>
+                            <p class="card-text">
+                                Вы вдохновитесь чудесными пейзажами, увидите святыни древнего христианского
+                                монастыря и узнаете о жизни и традициях абхазцев. Я расскажу, где они любят
+                                проводить время, как относятся к старшим, что готовят, когда заводят семьи и как
+                                справляют свадьбы.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 15 000</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://blog.ostrovok.ru/wp-content/uploads/2025/07/%D0%B12%D1%812-1-1280x559.jpg" class="card-img-top" alt="Москва">
+                        <div class="card-body">
+                            <h5 class="card-title">Москва – Столица России</h5>
+                            <p class="card-text">
+                                столица России, город федерального значения, административный центр Центрального
+                                федерального округа и центр Московской области, в состав которой не входит. 
+                                Мегаполис; крупнейший по численности населения город России и её субъект — 13 274 285
+                                человек.
+                                Тур по главным достопримечательностям столицы!
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 9 000</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://email-images.mindbox.ru/Leveltravel/2192/0f66ef30-41e3-42ed-853c-0fb451fea482.png" class="card-img-top" alt="Пхукет">
+                        <div class="card-body">
+                            <h5 class="card-title">Пхукет – жемчужина Таиланда</h5>
+                            <p class="card-text">
+                                Пхукет – остров, где тропические джунгли встречаются с бирюзовыми водами
+                                Андаманского моря. Здесь вас ждет идеальный пляжный отдых, завораживающие пейзажи,
+                                яркая культура и незабываемые приключения.
+                                Еще четка текста про супер солнечный континент. четка четка четкое место.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 50 000</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://avatars.mds.yandex.net/i?id=c357a0c40196a0b34cf36312abbbeadb132d3a18-9044089-images-thumbs&n=13" class="card-img-top" alt="Озеро Рица, Абхазия">
+                        <div class="card-body">
+                            <h5 class="card-title">Мальдивы – Райский архипелаг</h5>
+                            <p class="card-text">
+                                Белоснежные пляжи, бирюзовая вода и уединенные виллы на воде. Идеальное место для романтического отдыха и дайвинга среди ярких коралловых рифов.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 90 000</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://i.pinimg.com/originals/19/26/cd/1926cde18d90044e03a876d04d0f7603.webp?nii=t" class="card-img-top" alt="Москва">
+                        <div class="card-body">
+                            <h5 class="card-title">Бали – Остров богов</h5>
+                            <p class="card-text">
+                               Тропические джунгли, рисовые террасы и древние храмы. Здесь вы найдете идеальный баланс между расслабляющим пляжным отдыхом и духовными практиками.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 90 000</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://avatars.mds.yandex.net/i?id=ac3e4fa0004c999237b9cfeb9f468115_l-10642623-images-thumbs&n=13" class="card-img-top" alt="Пхукет">
+                        <div class="card-body">
+                            <h5 class="card-title"> Турция – Солнечное побережье</h5>
+                            <p class="card-text">
+                                Все включено по доступным ценам, теплое море и развитая инфраструктура. Отличный выбор для семейного отдыха с детьми и любителей активных развлечений.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 80 000</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/background/20240930/pngtree-scenic-waterfront-of-lake-garda-between-salo-and-gardone-riviera-in-image_16274223.jpg" class="card-img-top" alt="Озеро Рица, Абхазия">
+                        <div class="card-body">
+                            <h5 class="card-title">Италия – Колыбель искусств</h5>
+                            <p class="card-text">
+                                Гастрономические туры по Тоскане, романтика Венеции и величие Рима. Погружение в историю, культуру и знаменитую итальянскую кухню.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 40 000</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 7 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://avatars.mds.yandex.net/i?id=7622390fc1dbd838a0884b6869ed6cfe_l-9182206-images-thumbs&n=13" class="card-img-top" alt="Москва">
+                        <div class="card-body">
+                            <h5 class="card-title">Карелия – Сказочная природа</h5>
+                            <p class="card-text">
+                                Девственные леса, прозрачные озера и водопады. Идеально для любителей экотуризма, рыбалки и уединенных путешествий на северную природу.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 50 000</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://img.freepik.com/premium-photo/wat-arun-temple-bangkok_37794-52.jpg?semt=ais_hybrid&w=740" class="card-img-top" alt="Пхукет">
+                        <div class="card-body">
+                            <h5 class="card-title">Самуи – Экзотика Таиланда</h5>
+                            <p class="card-text">
+                                Живописные кокосовые рощи, бирюзовые лагуны и буддийские храмы. Спокойный остров с уютными бухтами и расслабленной атмосферой для настоящего отдыха.
+                            </p>
+                            <a href="catalog.html" class="btn btn-success">От 35 000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br></br>
+
+    </main>
     
+    <footer>
+        <div class="container" id = "contact">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>О компании</h5>
+                    <p>
+                        Мы создаем современные веб-решения для вашего бизнеса с
+                        использованием передовых технологий.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#gallery">Топ предложения</a></li>
+                        <li><a href="index.html">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: vikatkacenko35@gmail.com</li>
+                        <li>Телефон: +7 (992) 151-73-80</li>
+                        <li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2026 TourAgent. Все права защищены.</p>
+                <p class="mb-0 text-muted">Создано с помощью Bootstrap 5</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
